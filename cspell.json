@@ -1,0 +1,6 @@
+{
+  "words": ["liblaf"],
+  "ignorePaths": ["*-lock.*", "*.lock", "cspell.json"],
+  "dictionaries": ["cpp-legacy"],
+  "allowCompoundWords": true
+}
