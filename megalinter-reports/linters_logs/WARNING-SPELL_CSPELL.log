@@ -1,0 +1,99 @@
+Results of cspell linter (version 8.14.1)
+See documentation on https://megalinter.io/8.0.0/descriptors/spell_cspell/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+ 1/15 .github/auto-label.yaml 653.61ms
+ 2/15 .github/blunderbuss.yml 217.55ms X
+.github/blunderbuss.yml:4:5       - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+.github/blunderbuss.yml:7:5       - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+ 3/15 .github/CODE_OF_CONDUCT.md 175.19ms
+ 4/15 .github/CONTRIBUTING.md 162.78ms X
+.github/CONTRIBUTING.md:3:19      - Unknown word (liblaf's)   -- # Contributing to liblaf's Project
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+.github/CONTRIBUTING.md:20:20     - Unknown word (liblaf's)   -- - [Contributing to liblaf's Project](#contributing
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+.github/CONTRIBUTING.md:41:2      - Unknown word (liblaf's)   -- [liblaf's Project Code of Conduct
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+.github/CONTRIBUTING.md:124:74    - Unknown word (liblaf's)   -- enhancement suggestion for liblaf's Project, **including
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+.github/CONTRIBUTING.md:145:60    - Unknown word (liblaf's)   -- be useful** to most liblaf's Project users. You may
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+ 5/15 .github/ISSUE_TEMPLATE/01-bug-report.yaml 41.14ms X
+.github/ISSUE_TEMPLATE/01-bug-report.yaml:47:5      - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+ 6/15 .github/ISSUE_TEMPLATE/02-feature-request.yaml 42.68ms X
+.github/ISSUE_TEMPLATE/02-feature-request.yaml:28:5      - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+ 7/15 .github/renovate.json 131.12ms
+ 8/15 .github/SECURITY.md 52.51ms
+ 9/15 .github/sync-repo-settings.yaml 3.15ms
+10/15 .github/workflows/megalinter.yaml 69.60ms X
+.github/workflows/megalinter.yaml:179:15    - Unknown word (stefanzweifel) -- uses: stefanzweifel/git-auto-commit-action
+	 Suggestions: []
+11/15 .mega-linter.yaml 545.52ms X
+.mega-linter.yaml:34:12     - Unknown word (ISORT)      -- - PYTHON_ISORT
+	 Suggestions: [SORT, iost, IOST, IGOR, ISAR]
+.mega-linter.yaml:35:12     - Unknown word (MYPY)       -- - PYTHON_MYPY
+	 Suggestions: [MOPY, MYOPY, MACY, MANY, MAPS]
+.mega-linter.yaml:36:12     - Unknown word (PYLINT)     -- - PYTHON_PYLINT
+	 Suggestions: [PLYING, PINT, PAINT, PLANT, PLINK]
+.mega-linter.yaml:42:12     - Unknown word (DEVSKIM)    -- REPOSITORY_DEVSKIM_CONFIG_FILE: .github
+	 Suggestions: [DESK, DEVI, DKIM, DEISM, DENIM]
+.mega-linter.yaml:42:53     - Unknown word (devskim)    -- .github/megalinter/.devskim.json
+	 Suggestions: [desk, devi, dkim, deism, denim]
+.mega-linter.yaml:43:12     - Unknown word (KICS)       -- REPOSITORY_KICS_CONFIG_FILE: .github
+	 Suggestions: [KI'S, KICK, KIDS, KINS, KIPS]
+.mega-linter.yaml:43:49     - Unknown word (kics)       -- .github/megalinter/kics.config
+	 Suggestions: [ki's, kick, kids, kins, kips]
+12/15 .pre-commit-config.yaml 172.45ms X
+.pre-commit-config.yaml:10:13     - Unknown word (commitizen) -- - id: commitizen
+	 Suggestions: [comities, commitid, committed, committee, committer]
+.pre-commit-config.yaml:34:20     - Unknown word (bidi)       -- - id: forbid-bidi-controls
+	 Suggestions: [bide, bids, bini, Bini, bid]
+13/15 b0e54e32-bd61-4982-8045-8599b3db0793-megalinter_file_names_cspell.txt 60.18ms X
+b0e54e32-bd61-4982-8045-8599b3db0793-megalinter_file_names_cspell.txt:10:20     - Unknown word (devskim)    -- github megalinter devskim
+	 Suggestions: [desk, devi, dkim, deism, denim]
+14/15 cspell.json 24.78ms X
+cspell.json:2:14      - Unknown word (liblaf)     -- "words": ["liblaf"],
+	 Suggestions: [lila, libau, libia, libra, libya]
+15/15 renovate-config.json 2.20ms
+CSpell: Files checked: 15, Issues found: 21 in 9 files.
+
+
+You can skip this misspellings by defining the following .cspell.json file at the root of your repository
+Of course, please correct real typos before :)
+
+{
+    "version": "0.2",
+    "language": "en",
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/vscode-extension/**",
+        "**/.git/**",
+        "**/.pnpm-lock.json",
+        ".vscode",
+        "package-lock.json",
+        "megalinter-reports"
+    ],
+    "words": [
+        "DEVSKIM",
+        "ISORT",
+        "KICS",
+        "MYPY",
+        "PYLINT",
+        "bidi",
+        "commitizen",
+        "devskim",
+        "kics",
+        "liblaf",
+        "liblaf's",
+        "stefanzweifel"
+    ]
+}
+
+
+You can also copy-paste megalinter-reports/.cspell.json at the root of your repository

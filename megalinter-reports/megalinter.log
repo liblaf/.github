@@ -1,0 +1,364 @@
+----------------------------------------------------------------------------------------------------
+------------------------------------ MegaLinter, by OX Security ------------------------------------
+----------------------------------------------------------------------------------------------------
+ - Image Creation Date: 2024-08-19T21:44:53Z
+ - Image Revision: 378cc7a36ad17c7f458333ebf6803a5069fff007
+ - Image Version: v8.0.0
+----------------------------------------------------------------------------------------------------
+The MegaLinter documentation can be found at:
+ - https://megalinter.io/8.0.0
+----------------------------------------------------------------------------------------------------
+::group::MegaLinter initialization (expand for details)
+MegaLinter will analyze workspace [/github/workspace]
+GITHUB_REPOSITORY: liblaf/.github
+GITHUB_REF: refs/pull/3/merge
+GITHUB_RUN_ID: 11305394063
+
+
+[Activation] ANSIBLE_ANSIBLE_LINT has been set inactive, as none of these files has been found: ['.ansible-lint']
+[Activation] EDITORCONFIG_EDITORCONFIG_CHECKER has been set inactive, as none of these files has been found: ['.editorconfig']
+[Activation] JAVASCRIPT_ES has been set inactive, as none of these files has been found: ['.eslintrc.json', '.eslintrc.yml', '.eslintrc.yaml', '.eslintrc.js', '.eslintrc.cjs', 'package.json:eslintConfig']
+[Activation] JSON_NPM_PACKAGE_JSON_LINT has been set inactive, as none of these files has been found: ['package.json']
+[Activation] JSX_ESLINT has been set inactive, as none of these files has been found: ['.eslintrc.json', '.eslintrc.yml', '.eslintrc.yaml', '.eslintrc.js', '.eslintrc.cjs', 'package.json:eslintConfig']
+[Activation] KUBERNETES_KUBECONFORM has been set inactive, as subdirectory has not been found: kubernetes (set value "any" to always activate)
+[Activation] KUBERNETES_HELM has been set inactive, as none of these files has been found: ['Chart.yml', 'Chart.yaml']
+[Activation] KUBERNETES_KUBESCAPE has been set inactive, as none of these files has been found: ['Chart.yml', 'Chart.yaml']
+[Activation] REPOSITORY_LS_LINT has been set inactive, as none of these files has been found: ['.ls-lint.yml']
+[SemgrepLinter] Deactivated because no ruleset has been defined
+[Activation] SALESFORCE_SFDX_SCANNER_APEX has been set inactive, as subdirectory has not been found: force-app (set value "any" to always activate)
+[Activation] SALESFORCE_SFDX_SCANNER_AURA has been set inactive, as subdirectory has not been found: force-app (set value "any" to always activate)
+[Activation] SALESFORCE_SFDX_SCANNER_LWC has been set inactive, as subdirectory has not been found: force-app (set value "any" to always activate)
+[Activation] SALESFORCE_LIGHTNING_FLOW_SCANNER has been set inactive, as subdirectory has not been found: force-app (set value "any" to always activate)
+[Activation] SPELL_PROSELINT has been set inactive, as none of these files has been found: ['.proselintrc', 'proselint/config.json']
+[Activation] SPELL_VALE has been set inactive, as none of these files has been found: ['.vale.ini']
+[Activation] SQL_SQLFLUFF has been set inactive, as none of these files has been found: ['.sqlfluff']
+[Activation] SWIFT_SWIFTLINT has been set inactive, as none of these files has been found: ['.swiftlint.yml']
+[Activation] TSX_ESLINT has been set inactive, as none of these files has been found: ['.eslintrc.json', '.eslintrc.yml', '.eslintrc.yaml', '.eslintrc.js', '.eslintrc.cjs', 'package.json:eslintConfig']
+[Activation] TYPESCRIPT_ES has been set inactive, as none of these files has been found: ['.eslintrc.json', '.eslintrc.yml', '.eslintrc.yaml', '.eslintrc.js', '.eslintrc.cjs', 'package.json:eslintConfig']
+CLOJURE_CLJSTYLE has been disabled in MegaLinter for the following reason: Bug on cljstyle on alpine linux: https://github.com/greglook/cljstyle/issues/104
+JSON_ESLINT_PLUGIN_JSONC has been disabled in MegaLinter for the following reason: Bug in eslint-plugin-jsonc : https://github.com/ota-meshi/eslint-plugin-jsonc/issues/328
+MAKEFILE_CHECKMAKE has been disabled in MegaLinter for the following reason: Security issues: https://github.com/mrtazz/checkmake/issues/99
+MARKDOWN_REMARK_LINT has been disabled in MegaLinter for the following reason: Bug in remark-lint: https://github.com/remarkjs/remark-lint/issues/322
+SQL_TSQLLINT has been disabled in MegaLinter for the following reason: Security issues not handled: # https://github.com/tsqllint/tsqllint/issues/333
+Skipped linters: ANSIBLE_ANSIBLE_LINT, BASH_EXEC, CLOJURE_CLJSTYLE, EDITORCONFIG_EDITORCONFIG_CHECKER, JAVASCRIPT_ES, JAVASCRIPT_PRETTIER, JSON_ESLINT_PLUGIN_JSONC, JSON_NPM_PACKAGE_JSON_LINT, JSX_ESLINT, KUBERNETES_HELM, KUBERNETES_KUBECONFORM, KUBERNETES_KUBESCAPE, MAKEFILE_CHECKMAKE, MARKDOWN_REMARK_LINT, PYTHON_BANDIT, PYTHON_BLACK, PYTHON_FLAKE8, PYTHON_ISORT, PYTHON_MYPY, PYTHON_PYLINT, REPOSITORY_LS_LINT, REPOSITORY_SEMGREP, SALESFORCE_LIGHTNING_FLOW_SCANNER, SALESFORCE_SFDX_SCANNER_APEX, SALESFORCE_SFDX_SCANNER_AURA, SALESFORCE_SFDX_SCANNER_LWC, SPELL_PROSELINT, SPELL_VALE, SQL_SQLFLUFF, SQL_TSQLLINT, SWIFT_SWIFTLINT, TSX_ESLINT, TYPESCRIPT_ES, TYPESCRIPT_PRETTIER
+To receive reports as email, please set variable EMAIL_REPORTER_EMAIL
+::endgroup::
+::group::MegaLinter now collects the files to analyse (expand for details)
+Listing all files in directory [/github/workspace], then filter with:
+- File extensions: , .R, .RMD, .Rmd, .bash, .bicep, .c, .c++, .cc, .cdxml, .clj, .cljc, .cljs, .coffee, .cpp, .cs, .csproj, .css, .cu, .cuh, .cxx, .dart, .dash, .edn, .env, .feature, .go, .gradle, .graphql, .groovy, .gvy, .h, .h++, .hcl, .hh, .hpp, .htm, .html, .hxx, .java, .js, .json, .json5, .jsonc, .ksh, .kt, .kts, .lua, .markdown, .md, .mdx, .nf, .p6, .php, .pl, .pl6, .pm, .pm6, .pp, .proto, .ps1, .ps1xml, .psd1, .psm1, .psrc, .pssc, .py, .r, .raku, .rakumod, .rakutest, .rb, .rs, .rst, .saas, .scala, .scss, .sh, .smk, .t, .tex, .tf, .ts, .txt, .vb, .xml, .xsd, .yaml, .yml
+- File names (regex): Containerfile, Dockerfile, Jenkinsfile, Snakefile
+- Excluding .gitignored files [0]: 
+Kept [17] files on [18] found files
+
++----MATCHING LINTERS-------------------+------------------------------------------------------------------------+----------------+------------+
+| Descriptor | Linter                   | Criteria                                                               | Matching files | Format/Fix |
++------------+--------------------------+------------------------------------------------------------------------+----------------+------------+
+| ACTION     | actionlint               | .yml|.yaml                                                             | 1              | no         |
+| COPYPASTE  | jscpd                    |                                                                        | project        | no         |
+| JSON       | jsonlint                 | .json                                                                  | 5              | no         |
+| JSON       | v8r                      | .json                                                                  | 5              | no         |
+| JSON       | prettier                 | .json                                                                  | 5              | yes        |
+| MARKDOWN   | markdownlint             | .md                                                                    | 3              | yes        |
+| MARKDOWN   | markdown-link-check      | .md                                                                    | 3              | no         |
+| MARKDOWN   | markdown-table-formatter | .md                                                                    | 3              | yes        |
+| REPOSITORY | checkov                  |                                                                        | project        | no         |
+| REPOSITORY | devskim                  |                                                                        | project        | no         |
+| REPOSITORY | dustilock                |                                                                        | project        | no         |
+| REPOSITORY | git_diff                 |                                                                        | project        | no         |
+| REPOSITORY | gitleaks                 |                                                                        | project        | no         |
+| REPOSITORY | grype                    |                                                                        | project        | no         |
+| REPOSITORY | kics                     |                                                                        | project        | no         |
+| REPOSITORY | secretlint               |                                                                        | project        | no         |
+| REPOSITORY | syft                     |                                                                        | project        | no         |
+| REPOSITORY | trivy                    |                                                                        | project        | no         |
+| REPOSITORY | trivy-sbom               |                                                                        | project        | no         |
+| REPOSITORY | trufflehog               |                                                                        | project        | no         |
+| SPELL      | cspell                   |                                                                        | 17             | no         |
+| SPELL      | lychee                   | .md|.mdx|.markdown|.html|.htm|.rst|.txt|.json|.jsonc|.json5|.yaml|.yml | 17             | no         |
+| YAML       | prettier                 | .yml|.yaml                                                             | 9              | yes        |
+| YAML       | yamllint                 | .yml|.yaml                                                             | 9              | no         |
+| YAML       | v8r                      | .yml|.yaml                                                             | 9              | no         |
++------------+--------------------------+------------------------------------------------------------------------+----------------+------------+
+::endgroup::
+Processing linters on [4] parallel cores… (can be decreased with variable PARALLEL_PROCESS_NUMBER in case of performance issues)
+::group::[32m✅ Linted [JSON] files with [prettier] successfully - (0.41s)[0m (expand for details)
+- Using [prettier v3.3.3] https://megalinter.io/8.0.0/descriptors/json_prettier
+- MegaLinter key: [JSON_PRETTIER]
+- Rules config: identified by [prettier]
+- Number of files analyzed: [5]
+::endgroup::
+::group::[32m✅ Linted [YAML] files with [prettier] successfully - (0.61s)[0m (expand for details)
+- Using [prettier v3.3.3] https://megalinter.io/8.0.0/descriptors/yaml_prettier
+- MegaLinter key: [YAML_PRETTIER]
+- Rules config: identified by [prettier]
+- Number of files analyzed: [9]
+::endgroup::
+::group::[33m✅ Linted [MARKDOWN] files with [markdownlint]: Found 2 non blocking error(s) - (0.86s)[0m (expand for details)
+- Using [markdownlint v0.41.0] https://megalinter.io/8.0.0/descriptors/markdown_markdownlint
+- MegaLinter key: [MARKDOWN_MARKDOWNLINT]
+- Rules config: [.markdownlint.json]
+- Number of files analyzed: [3]
+--Error detail:
+.github/CONTRIBUTING.md:7:401 MD013/line-length Line length [Expected: 400; Actual: 406]
+.github/CONTRIBUTING.md:144:401 MD013/line-length Line length [Expected: 400; Actual: 428]
+
+::endgroup::
+::group::[32m✅ Linted [COPYPASTE] files with [jscpd] successfully - (0.81s)[0m (expand for details)
+- Using [jscpd v4.0.5] https://megalinter.io/8.0.0/descriptors/copypaste_jscpd
+- MegaLinter key: [COPYPASTE_JSCPD]
+- Rules config: [.jscpd.json]
+::endgroup::
+::group::[32m✅ Linted [MARKDOWN] files with [markdown-table-formatter] successfully - (0.27s)[0m (expand for details)
+- Using [markdown-table-formatter v1.6.1] https://megalinter.io/8.0.0/descriptors/markdown_markdown_table_formatter
+- MegaLinter key: [MARKDOWN_MARKDOWN_TABLE_FORMATTER]
+- Rules config: identified by [markdown-table-formatter]
+- Number of files analyzed: [3]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [secretlint] successfully - (0.43s)[0m (expand for details)
+- Using [secretlint v8.2.4] https://megalinter.io/8.0.0/descriptors/repository_secretlint
+- MegaLinter key: [REPOSITORY_SECRETLINT]
+- Rules config: [.secretlintrc.json]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [devskim] successfully - (1.0s)[0m (expand for details)
+- Using [devskim v1.0.33] https://megalinter.io/8.0.0/descriptors/repository_devskim
+- MegaLinter key: [REPOSITORY_DEVSKIM]
+- Rules config: [/github/workspace/.github/megalinter/.devskim.json]
+::endgroup::
+::group::[31m❌ Linted [MARKDOWN] files with [markdown-link-check]: Found 5 error(s) - (3.84s)[0m (expand for details)
+- Using [markdown-link-check v3.12.2] https://megalinter.io/8.0.0/descriptors/markdown_markdown_link_check
+- MegaLinter key: [MARKDOWN_MARKDOWN_LINK_CHECK]
+- Rules config: [.markdown-link-check.json]
+- Number of files analyzed: [3]
+--Error detail:
+(node:122) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+  ERROR: 4 dead links found in .github/CONTRIBUTING.md !
+  [✖] https://github.com/liblaf/issues → Status: 404
+  [✖] https://github.com/liblaf/issues/new → Status: 404
+  [✖] https://github.com/liblafissues?q=label%3Abug → Status: 404
+  [✖] https://github.com/GNOME/byzanz → Status: 404
+
+  ERROR: 1 dead links found in .github/SECURITY.md !
+  [✖] https://github.com/another-contributor → Status: 404
+
+::endgroup::
+::group::[32m✅ Linted [JSON] files with [v8r] successfully - (3.68s)[0m (expand for details)
+- Using [v8r v4.0.1] https://megalinter.io/8.0.0/descriptors/json_v8r
+- MegaLinter key: [JSON_V8R]
+- Rules config: identified by [v8r]
+- Number of files analyzed: [5]
+::endgroup::
+::group::[33m✅ Linted [SPELL] files with [cspell]: Found 21 non blocking error(s) - (3.94s)[0m (expand for details)
+- Using [cspell v8.14.1] https://megalinter.io/8.0.0/descriptors/spell_cspell
+- MegaLinter key: [SPELL_CSPELL]
+- Rules config: [/github/workspace/.cspell.json]
+- Number of files analyzed: [18]
+--Error detail:
+ 1/15 .github/auto-label.yaml 653.61ms
+ 2/15 .github/blunderbuss.yml 217.55ms X
+.github/blunderbuss.yml:4:5       - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+.github/blunderbuss.yml:7:5       - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+ 3/15 .github/CODE_OF_CONDUCT.md 175.19ms
+ 4/15 .github/CONTRIBUTING.md 162.78ms X
+.github/CONTRIBUTING.md:3:19      - Unknown word (liblaf's)   -- # Contributing to liblaf's Project
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+.github/CONTRIBUTING.md:20:20     - Unknown word (liblaf's)   -- - [Contributing to liblaf's Project](#contributing
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+.github/CONTRIBUTING.md:41:2      - Unknown word (liblaf's)   -- [liblaf's Project Code of Conduct
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+.github/CONTRIBUTING.md:124:74    - Unknown word (liblaf's)   -- enhancement suggestion for liblaf's Project, **including
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+.github/CONTRIBUTING.md:145:60    - Unknown word (liblaf's)   -- be useful** to most liblaf's Project users. You may
+	 Suggestions: [lila's, libra's, libya's, lilac's, libyan's]
+ 5/15 .github/ISSUE_TEMPLATE/01-bug-report.yaml 41.14ms X
+.github/ISSUE_TEMPLATE/01-bug-report.yaml:47:5      - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+ 6/15 .github/ISSUE_TEMPLATE/02-feature-request.yaml 42.68ms X
+.github/ISSUE_TEMPLATE/02-feature-request.yaml:28:5      - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+ 7/15 .github/renovate.json 131.12ms
+ 8/15 .github/SECURITY.md 52.51ms
+ 9/15 .github/sync-repo-settings.yaml 3.15ms
+10/15 .github/workflows/megalinter.yaml 69.60ms X
+.github/workflows/megalinter.yaml:179:15    - Unknown word (stefanzweifel) -- uses: stefanzweifel/git-auto-commit-action
+	 Suggestions: []
+11/15 .mega-linter.yaml 545.52ms X
+.mega-linter.yaml:34:12     - Unknown word (ISORT)      -- - PYTHON_ISORT
+	 Suggestions: [SORT, iost, IOST, IGOR, ISAR]
+.mega-linter.yaml:35:12     - Unknown word (MYPY)       -- - PYTHON_MYPY
+	 Suggestions: [MOPY, MYOPY, MACY, MANY, MAPS]
+.mega-linter.yaml:36:12     - Unknown word (PYLINT)     -- - PYTHON_PYLINT
+	 Suggestions: [PLYING, PINT, PAINT, PLANT, PLINK]
+.mega-linter.yaml:42:12     - Unknown word (DEVSKIM)    -- REPOSITORY_DEVSKIM_CONFIG_FILE: .github
+	 Suggestions: [DESK, DEVI, DKIM, DEISM, DENIM]
+.mega-linter.yaml:42:53     - Unknown word (devskim)    -- .github/megalinter/.devskim.json
+	 Suggestions: [desk, devi, dkim, deism, denim]
+.mega-linter.yaml:43:12     - Unknown word (KICS)       -- REPOSITORY_KICS_CONFIG_FILE: .github
+	 Suggestions: [KI'S, KICK, KIDS, KINS, KIPS]
+.mega-linter.yaml:43:49     - Unknown word (kics)       -- .github/megalinter/kics.config
+	 Suggestions: [ki's, kick, kids, kins, kips]
+12/15 .pre-commit-config.yaml 172.45ms X
+.pre-commit-config.yaml:10:13     - Unknown word (commitizen) -- - id: commitizen
+	 Suggestions: [comities, commitid, committed, committee, committer]
+.pre-commit-config.yaml:34:20     - Unknown word (bidi)       -- - id: forbid-bidi-controls
+	 Suggestions: [bide, bids, bini, Bini, bid]
+13/15 b0e54e32-bd61-4982-8045-8599b3db0793-megalinter_file_names_cspell.txt 60.18ms X
+b0e54e32-bd61-4982-8045-8599b3db0793-megalinter_file_names_cspell.txt:10:20     - Unknown word (devskim)    -- github megalinter devskim
+	 Suggestions: [desk, devi, dkim, deism, denim]
+14/15 cspell.json 24.78ms X
+cspell.json:2:14      - Unknown word (liblaf)     -- "words": ["liblaf"],
+	 Suggestions: [lila, libau, libia, libra, libya]
+15/15 renovate-config.json 2.20ms
+CSpell: Files checked: 15, Issues found: 21 in 9 files.
+
+::endgroup::
+::group::[32m✅ Linted [YAML] files with [v8r] successfully - (5.79s)[0m (expand for details)
+- Using [v8r v4.0.1] https://megalinter.io/8.0.0/descriptors/yaml_v8r
+- MegaLinter key: [YAML_V8R]
+- Rules config: identified by [v8r]
+- Number of files analyzed: [9]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [kics] successfully - (1.46s)[0m (expand for details)
+- Using [kics v2.1.2] https://megalinter.io/8.0.0/descriptors/repository_kics
+- MegaLinter key: [REPOSITORY_KICS]
+- Rules config: [/github/workspace/.github/megalinter/kics.config]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [trivy-sbom] successfully - (0.99s)[0m (expand for details)
+- Using [trivy-sbom v0.54.1] https://megalinter.io/8.0.0/descriptors/repository_trivy_sbom
+- MegaLinter key: [REPOSITORY_TRIVY_SBOM]
+- Rules config: identified by [trivy-sbom]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [trivy] successfully - (5.25s)[0m (expand for details)
+- Using [trivy v0.54.1] https://megalinter.io/8.0.0/descriptors/repository_trivy
+- MegaLinter key: [REPOSITORY_TRIVY]
+- Rules config: identified by [trivy]
+::endgroup::
+::group::[31m❌ Linted [SPELL] files with [lychee]: Found 5 error(s) - (0.49s)[0m (expand for details)
+- Using [lychee v0.15.1] https://megalinter.io/8.0.0/descriptors/spell_lychee
+- MegaLinter key: [SPELL_LYCHEE]
+- Rules config: identified by [lychee]
+- Number of files analyzed: [17]
+--Error detail:
+✗ [404] https://github.com/another-contributor | Failed: Network error: Not Found
+✗ [404] https://github.com/liblaf/issues/new | Failed: Network error: Not Found
+✗ [404] https://github.com/liblaf/issues | Failed: Network error: Not Found
+✗ [404] https://github.com/liblafissues?q=label%3Abug | Failed: Network error: Not Found
+✗ [404] https://github.com/GNOME/byzanz | Failed: Network error: Not Found
+📝 Summary
+---------------------
+🔍 Total...........68
+✅ Successful......54
+⏳ Timeouts.........0
+🔀 Redirected.......0
+👻 Excluded.........9
+❓ Unknown..........0
+🚫 Errors...........5
+
+Errors in .github/SECURITY.md
+✗ [404] https://github.com/another-contributor | Failed: Network error: Not Found
+
+Errors in .github/CONTRIBUTING.md
+✗ [404] https://github.com/liblaf/issues/new | Failed: Network error: Not Found
+✗ [404] https://github.com/liblafissues?q=label%3Abug | Failed: Network error: Not Found
+✗ [404] https://github.com/liblaf/issues | Failed: Network error: Not Found
+✗ [404] https://github.com/GNOME/byzanz | Failed: Network error: Not Found
+
+::endgroup::
+::group::[32m✅ Linted [ACTION] files with [actionlint] successfully - (0.11s)[0m (expand for details)
+- Using [actionlint v1.7.1] https://megalinter.io/8.0.0/descriptors/action_actionlint
+- MegaLinter key: [ACTION_ACTIONLINT]
+- Rules config: identified by [actionlint]
+- Number of files analyzed: [1]
+::endgroup::
+::group::[32m✅ Linted [JSON] files with [jsonlint] successfully - (0.22s)[0m (expand for details)
+- Using [jsonlint v16.0.0] https://megalinter.io/8.0.0/descriptors/json_jsonlint
+- MegaLinter key: [JSON_JSONLINT]
+- Rules config: identified by [jsonlint]
+- Number of files analyzed: [5]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [dustilock] successfully - (0.01s)[0m (expand for details)
+- Using [dustilock v1.2.0] https://megalinter.io/8.0.0/descriptors/repository_dustilock
+- MegaLinter key: [REPOSITORY_DUSTILOCK]
+- Rules config: identified by [dustilock]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [gitleaks] successfully - (0.09s)[0m (expand for details)
+- Using [gitleaks v8.18.4] https://megalinter.io/8.0.0/descriptors/repository_gitleaks
+- MegaLinter key: [REPOSITORY_GITLEAKS]
+- Rules config: [.gitleaks.toml]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [trufflehog] successfully - (3.55s)[0m (expand for details)
+- Using [trufflehog v3.81.9] https://megalinter.io/8.0.0/descriptors/repository_trufflehog
+- MegaLinter key: [REPOSITORY_TRUFFLEHOG]
+- Rules config: identified by [trufflehog]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [syft] successfully - (0.23s)[0m (expand for details)
+- Using [syft v1.11.0] https://megalinter.io/8.0.0/descriptors/repository_syft
+- MegaLinter key: [REPOSITORY_SYFT]
+- Rules config: identified by [syft]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [git_diff] successfully - (0.03s)[0m (expand for details)
+- Using [git_diff v2.45.2] https://megalinter.io/8.0.0/descriptors/repository_git_diff
+- MegaLinter key: [REPOSITORY_GIT_DIFF]
+- Rules config: identified by [git_diff]
+::endgroup::
+::group::[32m✅ Linted [YAML] files with [yamllint] successfully - (0.43s)[0m (expand for details)
+- Using [yamllint v1.35.1] https://megalinter.io/8.0.0/descriptors/yaml_yamllint
+- MegaLinter key: [YAML_YAMLLINT]
+- Rules config: [.yamllint.yml]
+- Number of files analyzed: [9]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [grype] successfully - (12.82s)[0m (expand for details)
+- Using [grype v0.79.5] https://megalinter.io/8.0.0/descriptors/repository_grype
+- MegaLinter key: [REPOSITORY_GRYPE]
+- Rules config: [.grype.yaml]
+::endgroup::
+::group::[32m✅ Linted [REPOSITORY] files with [checkov] successfully - (11.67s)[0m (expand for details)
+- Using [checkov v3.2.232] https://megalinter.io/8.0.0/descriptors/repository_checkov
+- MegaLinter key: [REPOSITORY_CHECKOV]
+- Rules config: [/github/workspace/.github/megalinter/.checkov.yml]
+::endgroup::
+[Updated Sources Reporter] copied 2 fixed source files in folder /github/workspace/megalinter-reports/updated_sources.
+Download it from artifacts then copy-paste it in your local repo to apply linters updates
+[GitHub Comment Reporter] Posted summary as comment on liblaf/.github #PR3
+
++----SUMMARY----+--------------------------+---------------+-------+-------+--------+--------------+
+| Descriptor    | Linter                   | Mode          | Files | Fixed | Errors | Elapsed time |
++---------------+--------------------------+---------------+-------+-------+--------+--------------+
+| ✅ ACTION     | actionlint               | list_of_files |     1 |       |      0 |        0.11s |
+| ✅ COPYPASTE  | jscpd                    | project       |   n/a |       |      0 |        0.81s |
+| ✅ JSON       | jsonlint                 | list_of_files |     5 |       |      0 |        0.22s |
+| ✅ JSON       | prettier                 | list_of_files |     5 |     0 |      0 |        0.41s |
+| ✅ JSON       | v8r                      | list_of_files |     5 |       |      0 |        3.68s |
+| ⚠️ MARKDOWN   | markdownlint             | list_of_files |     3 |     1 |      2 |        0.86s |
+| ❌ MARKDOWN   | markdown-link-check      | list_of_files |     3 |       |      5 |        3.84s |
+| ✅ MARKDOWN   | markdown-table-formatter | list_of_files |     3 |     2 |      0 |        0.27s |
+| ✅ REPOSITORY | checkov                  | project       |   n/a |       |      0 |       11.67s |
+| ✅ REPOSITORY | devskim                  | project       |   n/a |       |      0 |         1.0s |
+| ✅ REPOSITORY | dustilock                | project       |   n/a |       |      0 |        0.01s |
+| ✅ REPOSITORY | gitleaks                 | project       |   n/a |       |      0 |        0.09s |
+| ✅ REPOSITORY | git_diff                 | project       |   n/a |       |      0 |        0.03s |
+| ✅ REPOSITORY | grype                    | project       |   n/a |       |      0 |       12.82s |
+| ✅ REPOSITORY | kics                     | project       |   n/a |       |      0 |        1.46s |
+| ✅ REPOSITORY | secretlint               | project       |   n/a |       |      0 |        0.43s |
+| ✅ REPOSITORY | syft                     | project       |   n/a |       |      0 |        0.23s |
+| ✅ REPOSITORY | trivy                    | project       |   n/a |       |      0 |        5.25s |
+| ✅ REPOSITORY | trivy-sbom               | project       |   n/a |       |      0 |        0.99s |
+| ✅ REPOSITORY | trufflehog               | project       |   n/a |       |      0 |        3.55s |
+| ⚠️ SPELL      | cspell                   | list_of_files |    18 |       |     21 |        3.94s |
+| ❌ SPELL      | lychee                   | list_of_files |    17 |       |      5 |        0.49s |
+| ✅ YAML       | prettier                 | list_of_files |     9 |     0 |      0 |        0.61s |
+| ✅ YAML       | v8r                      | list_of_files |     9 |       |      0 |        5.79s |
+| ✅ YAML       | yamllint                 | list_of_files |     9 |       |      0 |        0.43s |
++---------------+--------------------------+---------------+-------+-------+--------+--------------+
+
+[34mYou could have same capabilities but better runtime performances if you use a MegaLinter flavor:[0m
+- [terraform] oxsecurity/megalinter/flavors/terraform@v8 (54 linters) https://megalinter.io/8.0.0/flavors/terraform/
+- [cupcake] oxsecurity/megalinter/flavors/cupcake@v8 (83 linters) https://megalinter.io/8.0.0/flavors/cupcake/
+
+[MARKDOWN_SUMMARY Reporter] Generated MARKDOWN_SUMMARY report: /github/workspace/megalinter-reports/megalinter-report.md
+[31m❌ Error(s) have been found during linting[0m
+To disable linters or customize their checks, you can use a .mega-linter.yml file at the root of your repository
+More info at https://megalinter.io/8.0.0/configuration/

@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
+    "allowCompoundWords": true,
+    "ignorePaths": [
+        ".vscode",
+        "**/.cspell.*",
+        "**/.git/**",
+        "**/*-lock.*",
+        "**/*.lock*",
+        "**/node_modules/**",
+        "**/vscode-extension/**",
+        "megalinter",
+        "report"
+    ],
+    "language": "en",
+    "version": "0.2",
+    "words": [
+        "DEVSKIM",
+        "ISORT",
+        "KICS",
+        "MYPY",
+        "PYLINT",
+        "bidi",
+        "commitizen",
+        "devskim",
+        "kics",
+        "liblaf",
+        "liblaf's",
+        "stefanzweifel"
+    ]
+}

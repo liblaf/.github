@@ -1,0 +1,18 @@
+Results of markdown-link-check linter (version 3.12.2)
+See documentation on https://megalinter.io/8.0.0/descriptors/markdown_markdown_link_check/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+(node:122) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+  ERROR: 4 dead links found in .github/CONTRIBUTING.md !
+  [✖] https://github.com/liblaf/issues → Status: 404
+  [✖] https://github.com/liblaf/issues/new → Status: 404
+  [✖] https://github.com/liblafissues?q=label%3Abug → Status: 404
+  [✖] https://github.com/GNOME/byzanz → Status: 404
+
+  ERROR: 1 dead links found in .github/SECURITY.md !
+  [✖] https://github.com/another-contributor → Status: 404
+

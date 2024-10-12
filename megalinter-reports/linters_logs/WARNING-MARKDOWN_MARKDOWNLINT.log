@@ -1,0 +1,9 @@
+Results of markdownlint linter (version 0.41.0)
+See documentation on https://megalinter.io/8.0.0/descriptors/markdown_markdownlint/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+.github/CONTRIBUTING.md:7:401 MD013/line-length Line length [Expected: 400; Actual: 406]
+.github/CONTRIBUTING.md:144:401 MD013/line-length Line length [Expected: 400; Actual: 428]
+

@@ -1,0 +1,30 @@
+Results of lychee linter (version 0.15.1)
+See documentation on https://megalinter.io/8.0.0/descriptors/spell_lychee/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+✗ [404] https://github.com/another-contributor | Failed: Network error: Not Found
+✗ [404] https://github.com/liblaf/issues/new | Failed: Network error: Not Found
+✗ [404] https://github.com/liblaf/issues | Failed: Network error: Not Found
+✗ [404] https://github.com/liblafissues?q=label%3Abug | Failed: Network error: Not Found
+✗ [404] https://github.com/GNOME/byzanz | Failed: Network error: Not Found
+📝 Summary
+---------------------
+🔍 Total...........68
+✅ Successful......54
+⏳ Timeouts.........0
+🔀 Redirected.......0
+👻 Excluded.........9
+❓ Unknown..........0
+🚫 Errors...........5
+
+Errors in .github/SECURITY.md
+✗ [404] https://github.com/another-contributor | Failed: Network error: Not Found
+
+Errors in .github/CONTRIBUTING.md
+✗ [404] https://github.com/liblaf/issues/new | Failed: Network error: Not Found
+✗ [404] https://github.com/liblafissues?q=label%3Abug | Failed: Network error: Not Found
+✗ [404] https://github.com/liblaf/issues | Failed: Network error: Not Found
+✗ [404] https://github.com/GNOME/byzanz | Failed: Network error: Not Found
+
