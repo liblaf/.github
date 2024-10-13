@@ -26,6 +26,10 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
       - id: trailing-whitespace
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.29.2
+    hooks:
+      - id: check-github-workflows
   - repo: https://github.com/sirosen/texthooks
     rev: 0.6.7
     hooks:
