@@ -8,5 +8,9 @@ assign_prs:
 
 ignore_authors:
   - dependabot[bot]
+  - github-actions[bot]
+  - liblaf-bot[bot]
+  - megalinter-bot
   - pre-commit-ci[bot]
+  - release-please[bot]
   - renovate[bot]
