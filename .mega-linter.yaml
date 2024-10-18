@@ -4,7 +4,6 @@
 # ----------------------------- Common Variables ----------------------------- #
 APPLY_FIXES: all
 DISABLE_LINTERS:
-  - BASH_EXEC
   - PYTHON_BANDIT
   - PYTHON_BLACK
   - PYTHON_FLAKE8
