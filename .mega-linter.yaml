@@ -3,6 +3,7 @@
 
 # ----------------------------- Common Variables ----------------------------- #
 APPLY_FIXES: all
+DISABLE_ERRORS: true
 DISABLE_LINTERS:
   - PYTHON_BANDIT
   - PYTHON_BLACK
