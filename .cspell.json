@@ -9,7 +9,7 @@
     "liblaf's",
     "mypy",
     "numpy",
-    "owasp",
+    "pydantic",
     "pydocstyle",
     "pylint",
     "pyplot",

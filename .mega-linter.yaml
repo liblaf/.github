@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/megalinter/megalinter/main/megalinter/descriptors/schemas/megalinter-configuration.jsonschema.json
-# ref: <https://megalinter.io/latest/config-file/>
+# https://megalinter.io/latest/config-file/
 
 # ----------------------------- Common Variables ----------------------------- #
 APPLY_FIXES: all
@@ -12,7 +12,6 @@ DISABLE_LINTERS:
   - PYTHON_MYPY
   - PYTHON_PYLINT
 IGNORE_GENERATED_FILES: true
-LINTER_RULES_PATH: https://github.com/liblaf/.github/raw/refs/heads/main/.github/linters/
 SHOW_ELAPSED_TIME: true
 
 # ---------------------------------- Linters --------------------------------- #
