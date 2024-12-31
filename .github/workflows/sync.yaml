@@ -5,6 +5,9 @@ on:
     - cron: "0 0 * * 0"
   workflow_dispatch:
 
+env:
+  COPIER_PYTHON: tmp.3wTvlJYPRu
+
 jobs:
   sync:
     name: Sync
@@ -14,9 +17,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT || github.token }}
+      - name: Checkout liblaf/copier-python
+        uses: actions/checkout@v4
+        with:
+          repository: liblaf/copier-python
+          token: ${{ secrets.PAT || github.token }}
+          path: ${{ env.COPIER_PYTHON }}
+          sparse-checkout: .github/linters
       - name: Sync Files
-        run: bash scripts/sync.sh
+        run: cp --archive --force --recursive --verbose -- "${{ env.COPIER_PYTHON }}/.github/linters/" ".github/"
+      - name: Remove liblaf/copier-python
+        run: rm --force --recursive -- "${{ env.COPIER_PYTHON }}"
       - name: Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(sync): sync from template"
+          commit_message: "chore(linters): sync from gh:liblaf/copier-python"
