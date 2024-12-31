@@ -25,9 +25,10 @@ jobs:
           repository: liblaf/copier-python
           token: ${{ secrets.PAT || github.token }}
           path: ${{ env.COPIER_PYTHON }}
-          sparse-checkout: .github/linters
+          sparse-checkout: template/.github/linters
       - name: Sync Files
-        run: cp --archive --force --recursive --verbose -- "${{ env.COPIER_PYTHON }}/.github/linters/" ".github/"
+        run: |-
+          cp --archive --force --recursive --verbose -- "${{ env.COPIER_PYTHON }}/template/.github/linters/" ".github/"
       - name: Remove liblaf/copier-python
         run: rm --force --recursive -- "${{ env.COPIER_PYTHON }}"
       - name: Auto Commit
