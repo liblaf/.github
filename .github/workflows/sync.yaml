@@ -34,3 +34,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(linters): sync from gh:liblaf/copier-python"
+          commit_user_name: ${{ github.actor }}
+          commit_user_email: ${{ github.actor }}+${{ github.actor_id }}@users.noreply.github.com
+          commit_author: ${{ github.actor }} <${{ github.actor }}+${{ github.actor_id }}@users.noreply.github.com>
