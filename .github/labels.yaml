@@ -237,3 +237,5 @@
   color: "ededed"
 - name: "autorelease: published"
   color: "ededed"
+- name: "release-please:force-run"
+  color: "bdca82"
