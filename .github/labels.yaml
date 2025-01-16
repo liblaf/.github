@@ -226,10 +226,14 @@
 # Generated
 - name: "generated: genai"
   description: Contains Generative AI based code, requesting an additional reviewer.
-  color: "FFCC00"
+  color: "ffcc00"
 
 # [Release Please](https://github.com/googleapis/release-please)
 - name: "autorelease: pending"
+  color: "ededed"
 - name: "autorelease: tagged"
+  color: "ededed"
 - name: "autorelease: snapshot"
+  color: "ededed"
 - name: "autorelease: published"
+  color: "ededed"

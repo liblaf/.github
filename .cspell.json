@@ -4,6 +4,11 @@
   "language": "en",
   "words": [
     "asyncio",
+    "ededed",
+    "fbca",
+    "ffcc",
+    "ffffc",
+    "genai",
     "isort",
     "liblaf",
     "liblaf's",
@@ -16,10 +21,10 @@
     "pyright",
     "pyrightconfig",
     "pyvista",
-    "sarif",
     "shfmt",
     "stefanzweifel",
-    "trimesh"
+    "trimesh",
+    "ubelt"
   ],
   "ignorePaths": [
     "**/.cspell.*",
