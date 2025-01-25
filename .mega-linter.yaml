@@ -20,6 +20,8 @@ DISABLE_LINTERS:
   - TYPESCRIPT_PRETTIER
   - TYPESCRIPT_STANDARD
 IGNORE_GENERATED_FILES: true
+PLUGINS:
+  - https://raw.githubusercontent.com/liblaf/megalinter-plugins/refs/heads/main/mega-linter-plugin-markdown-prettier/markdown.megalinter-descriptor.yml
 SHOW_ELAPSED_TIME: true
 
 # ---------------------------------- Linters --------------------------------- #
