@@ -10,5 +10,6 @@
     "nicolas.vuillamy@ox.security",
     "noreply@github.com",
     "renovate[bot]@users.noreply.github.com"
-  ]
+  ],
+  "ignorePaths": ["**/.python-version"]
 }
