@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", "default:automergeAll"],
+  "extends": ["config:recommended"],
   "gitIgnoredAuthors": [
     "129584137+megalinter-bot@users.noreply.github.com",
     "184555210+liblaf-bot[bot]@users.noreply.github.com",
