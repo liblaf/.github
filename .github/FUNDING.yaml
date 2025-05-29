@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-funding.json
+# ref: <https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository>
+
+github:
+  - liblaf
+
+custom:
+  - https://afdian.com/a/liblaf
