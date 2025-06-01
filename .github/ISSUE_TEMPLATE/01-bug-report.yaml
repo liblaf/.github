@@ -48,6 +48,6 @@ assignees:
 
 labels:
   - "type: bug"
-  - "priority: p2"
+  - "priority: medium"
 
 title: "[Bug] "

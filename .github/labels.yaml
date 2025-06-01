@@ -1,17 +1,14 @@
-# https://github.com/googleapis/repo-automation-bots/blob/main/packages/label-sync/src/labels.json
-# https://github.com/seantrane/github-label-presets/blob/main/labels.yml
-# https://seantrane.com/posts/logical-colorful-github-labels-18230/
+# ref: <https://github.com/googleapis/repo-automation-bots/blob/main/packages/label-sync/src/labels.json>
+# ref: <https://github.com/seantrane/github-label-presets/blob/main/labels.yml>
+# ref: <https://seantrane.com/posts/logical-colorful-github-labels-18230/>
 
-# Standard
+# region Standard
 - name: "automerge"
   description: Merge the pull request once unit tests and other checks pass.
   color: "00ff00"
 - name: "do not merge"
   description: Indicates a pull request not ready for merge, due to either quality or timing.
   color: "d93f0b"
-- name: "external"
-  description: This issue is blocked on a bug with the actual product.
-  color: "800080"
 - name: "good first issue"
   description: This issue is a good place to started contributing to this repository.
   color: "520b77"
@@ -33,22 +30,39 @@
     - "status: help wanted"
     - "Status: PR Welcome"
     - "Status: Ready for PR"
+# endregion Standard
 
-# Priority
-- name: "priority: p0"
+# region Priority
+- name: "priority: critical"
   description: Highest priority. Critical issue. P0 implies highest priority.
   color: "b60205"
-- name: "priority: p1"
+  aliases:
+    - "Priority: Critical"
+    - "priority: now"
+    - "priority: p0"
+- name: "priority: high"
   description: Important issue which blocks shipping the next release. Will be fixed prior to next release.
   color: "ffa03e"
-- name: "priority: p2"
+  aliases:
+    - "priority: 2day"
+    - "Priority: High"
+    - "priority: p1"
+- name: "priority: medium"
   description: Moderately-important priority. Fix may not be included in next release.
   color: "fef2c0"
-- name: "priority: p3"
+  aliases:
+    - "Priority: Medium"
+    - "priority: p2"
+    - "priority: soon"
+- name: "priority: low"
   description: Desirable enhancement or fix. May not be included in next release.
   color: "ffffc7"
+  aliases:
+    - "Priority: Low"
+    - "priority: p3"
+# endregion Priority
 
-# State
+# region State
 - name: "status: blocked"
   description: Resolving the issue is dependent on other work.
   color: "f9d0c4"
@@ -84,8 +98,9 @@
 - name: "needs more info"
   description: This issue needs more information from the customer to proceed.
   color: "e0ff32"
+# endregion State
 
-# Type
+# region Type
 - name: "type: bug"
   description: Error or flaw in code with unintended results or allowing sub-optimal usage patterns.
   color: "db4437"
@@ -142,8 +157,9 @@
   aliases:
     - "test"
     - "testing"
+# endregion Type
 
-# Work
+# region Work
 - name: "work: chaotic"
   description: The situation is chaotic, novel practices used.
   color: "fbca04"
@@ -164,8 +180,9 @@
   color: "91ca55"
   aliases:
     - "obvious"
+# endregion Work
 
-# Semantic Versioning
+# region Semantic Versioning
 - name: "breaking"
   description: this is a change that we should wait to bundle into the next major version
   color: "b5e67b"
@@ -185,8 +202,10 @@
 - name: "semver: patch"
   description: A minor bug fix or small change.
   color: "66C7F4"
+# endregion Semantic Versioning
 
-# Language
+# region Language
+# ref: <https://github.com/googleapis/repo-automation-bots/tree/main/packages/auto-label>
 - name: "lang: nodejs"
   description: Issues specific to JavaScript or TypeScript.
   color: "68A063"
@@ -214,21 +233,26 @@
 - name: "lang: go"
   description: Issues specific to Go.
   color: "2fe0da"
+# endregion Language
 
-# Stale
+# region Stale
+# ref: <https://github.com/googleapis/repo-automation-bots/tree/main/packages/auto-label>
 - name: "stale: old"
   description: Pull request is old and needs attention.
   color: "ab270b"
 - name: "stale: extraold"
   description: Pull request is critically old and needs prioritization.
   color: "801904"
+# endregion Stale
 
-# Generated
+# region Generated
 - name: "generated: genai"
   description: Contains Generative AI based code, requesting an additional reviewer.
   color: "ffcc00"
+# endregion Generated
 
-# [Release Please](https://github.com/googleapis/release-please)
+# region Release Please
+# ref: <https://github.com/googleapis/release-please>
 - name: "autorelease: pending"
   color: "ededed"
 - name: "autorelease: tagged"
@@ -239,3 +263,4 @@
   color: "ededed"
 - name: "release-please:force-run"
   color: "bdca82"
+# endregion Release Please

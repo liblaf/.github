@@ -29,6 +29,6 @@ assignees:
 
 labels:
   - "type: feature"
-  - "priority: p3"
+  - "priority: low"
 
 title: "[Feature] "

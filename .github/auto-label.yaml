@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/googleapis/repo-automation-bots/main/packages/auto-label/src/config-schema.json
+# ref: <https://github.com/googleapis/repo-automation-bots/tree/main/packages/auto-label>
 
 language:
   pullrequest: true
