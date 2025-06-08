@@ -34,7 +34,7 @@ jobs:
           sparse-checkout: template/.config/linters
       - name: Sync Files
         run: |-
-          cp --archive --force --recursive --verbose -- "${{ env.COPIER_PYTHON }}/template/.github/linters/" ".github/"
+          cp --archive --force --recursive --verbose -- "${{ env.COPIER_PYTHON }}/template/.config/linters/" ".github/"
       - name: Remove liblaf/copier-python
         run: rm --force --recursive -- "${{ env.COPIER_PYTHON }}"
       - name: Commit
