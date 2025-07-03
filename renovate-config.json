@@ -11,5 +11,6 @@
     "noreply@github.com",
     "renovate[bot]@users.noreply.github.com"
   ],
+  "ignoreDeps": ["python"],
   "ignorePaths": ["**/.python-version"]
 }
