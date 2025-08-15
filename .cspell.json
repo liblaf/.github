@@ -3,8 +3,9 @@
   "version": "0.2",
   "language": "en",
   "words": [
-    "asyncio",
     "bdca",
+    "clippy",
+    "direnv",
     "ededed",
     "fbca",
     "ffcc",
@@ -15,7 +16,6 @@
     "liblaf's",
     "mypy",
     "numpy",
-    "pydantic",
     "pydocstyle",
     "pylint",
     "pyplot",
@@ -23,9 +23,7 @@
     "pyrightconfig",
     "pyvista",
     "shfmt",
-    "stefanzweifel",
-    "trimesh",
-    "ubelt"
+    "trimesh"
   ],
   "ignorePaths": [
     "**/.cspell.*",

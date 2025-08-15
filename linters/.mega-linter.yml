@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/megalinter/megalinter/main/megalinter/descriptors/schemas/megalinter-configuration.jsonschema.json
-# https://megalinter.io/latest/config-file/
+# ref: <https://megalinter.io/latest/config-file/>
 
 # ----------------------------- Common Variables ----------------------------- #
 APPLY_FIXES: all
@@ -15,12 +15,15 @@ DISABLE_LINTERS:
   - PYTHON_ISORT
   - PYTHON_MYPY
   - PYTHON_PYLINT
+  - PYTHON_PYRIGHT # needs setup
   - REPOSITORY_CHECKOV # too slow
   - REPOSITORY_GRYPE # too slow
+  - RUST_CLIPPY # needs setup
   - TSX_ESLINT
   - TYPESCRIPT_ES
   - TYPESCRIPT_PRETTIER
   - TYPESCRIPT_STANDARD
+FILTER_REGEX_EXCLUDE: '.*\-lock\..*|.*\.lock'
 IGNORE_GENERATED_FILES: true
 PLUGINS:
   - https://raw.githubusercontent.com/liblaf/megalinter-plugins/main/mega-linter-plugin-markdown-prettier/markdown.megalinter-descriptor.yml
@@ -33,6 +36,6 @@ JSON_FILTER_REGEX_EXCLUDE: '\.config/release\-please/\.manifest\.json'
 MARKDOWN_MARKDOWN_LINK_CHECK_DISABLE_ERRORS: true
 PYTHON_PYRIGHT_DISABLE_ERRORS: true
 REPOSITORY_TRIVY_DISABLE_ERRORS: true
+SPELL_CSPELL_ANALYZE_FILE_NAMES: false
 SPELL_CSPELL_DISABLE_ERRORS: true
 SPELL_LYCHEE_DISABLE_ERRORS: true
-YAML_PRETTIER_FILTER_REGEX_EXCLUDE: '.*\-lock\..*|.*\.lock'
