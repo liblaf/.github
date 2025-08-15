@@ -32,11 +32,14 @@ SHOW_ELAPSED_TIME: true
 # ---------------------------------- Linters --------------------------------- #
 BASH_SHFMT_ARGUMENTS: --simplify --indent 2 --case-indent --space-redirects
 COPYPASTE_JSCPD_DISABLE_ERRORS: true
-JSON_FILTER_REGEX_EXCLUDE: '\.config/release\-please/\.manifest\.json'
+JSON_FILTER_REGEX_EXCLUDE: ".config/release-please/.manifest.json"
 MARKDOWN_MARKDOWN_LINK_CHECK_DISABLE_ERRORS: true
 PYTHON_PYRIGHT_DISABLE_ERRORS: true
+PYTHON_RUFF_CLI_LINT_MODE: project
+PYTHON_RUFF_CONFIG_FILE: LINTER_DEFAULT
 REPOSITORY_TRIVY_DISABLE_ERRORS: true
 SPELL_CSPELL_ANALYZE_FILE_NAMES: false
 SPELL_CSPELL_CONFIG_FILE: LINTER_DEFAULT
 SPELL_CSPELL_DISABLE_ERRORS: true
+SPELL_CSPELL_FILTER_REGEX_EXCLUDE: ".mega-linter.yml|.ruff.toml|pyright.json"
 SPELL_LYCHEE_DISABLE_ERRORS: true
