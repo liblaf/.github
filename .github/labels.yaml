@@ -246,6 +246,9 @@
 # endregion Stale
 
 # region Generated
+- name: "autofix"
+  description: Apply linters automatic fixes.
+  color: "00ff00"
 - name: "generated: genai"
   description: Contains Generative AI based code, requesting an additional reviewer.
   color: "ffcc00"
