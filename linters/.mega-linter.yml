@@ -25,8 +25,8 @@ DISABLE_LINTERS:
   - TYPESCRIPT_STANDARD
 FILTER_REGEX_EXCLUDE: '.*\-lock\..*|.*\.lock'
 IGNORE_GENERATED_FILES: true
-PLUGINS:
-  - https://raw.githubusercontent.com/liblaf/megalinter-plugins/main/mega-linter-plugin-markdown-prettier/markdown.megalinter-descriptor.yml
+# PLUGINS:
+#   - https://raw.githubusercontent.com/liblaf/megalinter-plugins/main/mega-linter-plugin-markdown-prettier/markdown.megalinter-descriptor.yml
 SHOW_ELAPSED_TIME: true
 
 # ---------------------------------- Linters --------------------------------- #
