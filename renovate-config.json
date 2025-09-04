@@ -1,7 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
-  "addLabels": ["automerge"],
+  "extends": [
+    "config:recommended",
+    ":assignAndReview(liblaf)",
+    ":automergeAll"
+  ],
   "gitIgnoredAuthors": [
     "129584137+megalinter-bot@users.noreply.github.com",
     "184555210+liblaf-bot[bot]@users.noreply.github.com",
@@ -11,5 +14,6 @@
     "66853113+pre-commit-ci[bot]@users.noreply.github.com"
   ],
   "ignoreDeps": ["python"],
-  "ignorePaths": ["**/.python-version"]
+  "ignorePaths": ["**/.python-version"],
+  "platformAutomerge": false
 }
