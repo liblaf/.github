@@ -5,7 +5,7 @@
 # ref: <https://github.com/yoshuawuyts/github-standard-labels/blob/master/README.md>
 # ref: <https://seantrane.com/posts/logical-colorful-github-labels-18230/>
 
-# --------------------------------- Standard --------------------------------- #
+# ---------------------------------- GitHub ---------------------------------- #
 - name: "bug"
   color: "#d73a4a"
   description: Something isn't working
@@ -123,3 +123,9 @@
 - name: "autorelease: published"
   color: "#ededed"
   description: means that a GitHub release has been published based on the Release PR
+
+# ------------------------------- Miscellaneous ------------------------------ #
+# ref: <https://github.com/apps/mergery>
+- name: "automerge"
+  color: "#00ff00"
+  description: Merge the pull request once unit tests and other checks pass.
