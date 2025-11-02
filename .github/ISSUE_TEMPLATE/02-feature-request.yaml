@@ -28,7 +28,7 @@ assignees:
   - liblaf
 
 labels:
-  - "type: feature"
+  - "enhancement"
   - "priority: low"
 
 title: "[Feature] "

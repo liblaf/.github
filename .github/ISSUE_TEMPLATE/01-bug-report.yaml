@@ -47,7 +47,7 @@ assignees:
   - liblaf
 
 labels:
-  - "type: bug"
+  - "bug"
   - "priority: medium"
 
 title: "[Bug] "

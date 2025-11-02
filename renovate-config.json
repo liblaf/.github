@@ -7,13 +7,12 @@
   ],
   "gitIgnoredAuthors": [
     "129584137+megalinter-bot@users.noreply.github.com",
-    "184555210+liblaf-bot[bot]@users.noreply.github.com",
+    "184555210+liblaf[bot]@users.noreply.github.com",
     "29139614+renovate[bot]@users.noreply.github.com",
     "41898282+github-actions[bot]@users.noreply.github.com",
     "55107282+release-please[bot]@users.noreply.github.com",
     "66853113+pre-commit-ci[bot]@users.noreply.github.com"
   ],
-  "ignoreDeps": ["python"],
-  "ignorePaths": ["**/.python-version"],
+  "ignoreDeps": ["python", "pytorch", "pytorch3d"],
   "platformAutomerge": false
 }

@@ -1,269 +1,125 @@
+# ref: <https://github.com/crazy-max/ghaction-github-labeler/blob/master/samples/original.yml>
+# ref: <https://github.com/Financial-Times/github-label-sync>
 # ref: <https://github.com/googleapis/repo-automation-bots/blob/main/packages/label-sync/src/labels.json>
 # ref: <https://github.com/seantrane/github-label-presets/blob/main/labels.yml>
+# ref: <https://github.com/yoshuawuyts/github-standard-labels/blob/master/README.md>
 # ref: <https://seantrane.com/posts/logical-colorful-github-labels-18230/>
 
-# region Standard
-- name: "automerge"
-  description: Merge the pull request once unit tests and other checks pass.
-  color: "00ff00"
-- name: "do not merge"
-  description: Indicates a pull request not ready for merge, due to either quality or timing.
-  color: "d93f0b"
-- name: "good first issue"
-  description: This issue is a good place to started contributing to this repository.
-  color: "520b77"
+# --------------------------------- Standard --------------------------------- #
+- name: "bug"
+  color: "#d73a4a"
+  description: Something isn't working
   aliases:
-    - "beginner-friendly"
-    - "beginner"
-    - "good for beginner"
-    - "Good for beginners"
-    - "good-starter-issue"
-    - "starter-issue"
-    - "starter"
-    - "status: good starter issue"
+    - "type: bug"
+    - "type: fix"
+- name: "documentation"
+  color: "#0075ca"
+  description: Improvements or additions to documentation
+  aliases:
+    - "type: docs"
+- name: "duplicate"
+  color: "#cfd3d7"
+  description: This issue or pull request already exists
+  types:
+    - "state: duplicate"
+    - "status: duplicate"
+- name: "enhancement"
+  color: "#a2eeef"
+  description: New feature or request
+  aliases:
+    - "type: feature"
+    - "type: feature request"
+- name: "good first issue"
+  color: "#7057ff"
+  description: Good for newcomers
 - name: "help wanted"
-  description: We'd love to have community involvement on this issue.
-  color: "3f5e3d"
+  color: "#008672"
+  description: Extra attention is needed
   aliases:
     - "help"
-    - "Patch Welcome"
-    - "status: help wanted"
-    - "Status: PR Welcome"
-    - "Status: Ready for PR"
-# endregion Standard
-
-# region Priority
-- name: "priority: critical"
-  description: Highest priority. Critical issue. P0 implies highest priority.
-  color: "b60205"
+- name: "invalid"
+  color: "#e4e669"
+  description: This doesn't seem right
   aliases:
-    - "Priority: Critical"
+    - "state: invalid"
+    - "status: invalid"
+- name: "question"
+  color: "#d876e3"
+  description: Further information is requested
+  aliases:
+    - "type: discussion"
+    - "type: question"
+- name: "wontfix"
+  color: "#ffffff"
+  description: This will not be worked on
+  aliases:
+    - "state: will not fix"
+    - "state: wontfix"
+    - "status: will not fix"
+    - "status: wontfix"
+
+# --------------------------------- Priority --------------------------------- #
+- name: "priority: critical"
+  color: "#b60205"
+  description: Highest priority. Critical issue.
+  aliases:
     - "priority: now"
     - "priority: p0"
 - name: "priority: high"
+  color: "#ffa03e"
   description: Important issue which blocks shipping the next release. Will be fixed prior to next release.
-  color: "ffa03e"
   aliases:
     - "priority: 2day"
-    - "Priority: High"
     - "priority: p1"
 - name: "priority: medium"
+  color: "#fef2c0"
   description: Moderately-important priority. Fix may not be included in next release.
-  color: "fef2c0"
   aliases:
-    - "Priority: Medium"
     - "priority: p2"
     - "priority: soon"
 - name: "priority: low"
+  color: "#ffffc7"
   description: Desirable enhancement or fix. May not be included in next release.
-  color: "ffffc7"
   aliases:
-    - "Priority: Low"
     - "priority: p3"
-# endregion Priority
 
-# region State
-- name: "status: blocked"
-  description: Resolving the issue is dependent on other work.
-  color: "f9d0c4"
-  aliases:
-    - "blocked"
-    - "state: blocked"
-    - "Status: Blocked"
-- name: "status: duplicate"
-  description: Duplicate.
-  color: "d4c5f9"
-  aliases:
-    - "duplicate"
-- name: "status: invalid"
-  description: This doesn't seem right
-  color: "e4e669"
-  aliases:
-    - "invalid"
-    - "state: invalid"
-    - "Status: Invalid"
-- name: "status: investigating"
-  description: The issue is under investigation, which is determined to be non-trivial.
-  color: "fef2c0"
-- name: "status: will not fix"
-  description: Invalid (untrue/unsound/erroneous), inconsistent with product, not on roadmap.
-  color: "d4c5f9"
-  aliases:
-    - "state: inactive"
-    - "Status: Abandoned"
-    - "status: duplicate"
-    - "status: wontfix"
-    - "wont-fix"
-    - "wontfix"
-- name: "needs more info"
-  description: This issue needs more information from the customer to proceed.
-  color: "e0ff32"
-# endregion State
-
-# region Type
-- name: "type: bug"
-  description: Error or flaw in code with unintended results or allowing sub-optimal usage patterns.
-  color: "db4437"
-  aliases:
-    - "bug"
-    - "Type: Bug"
-- name: "type: cleanup"
-  description: An internal cleanup or hygiene concern.
-  color: "c5def5"
-- name: "type: docs"
-  description: Improvement to the documentation for an API.
-  color: "0000A0"
-  aliases:
-    - "doc"
-    - "docs"
-    - "document"
-    - "documentation"
-    - "documents"
-    - "type: documentation"
-    - "Type: Documentation"
-- name: "type: feature"
-  description: "'Nice-to-have' improvement, new feature or different behavior or design."
-  color: "c5def5"
-  aliases:
-    - "addition"
-    - "enhancement"
-    - "feature"
-    - "type: enhancement"
-    - "type: feature request"
-    - "Type: Feature"
-- name: "type: fix"
-  color: "91ca55"
-  description: Iterations on existing features or infrastructure.
-  aliases:
-    - "fix"
-    - "improvement"
-    - "optimization"
-    - "refactor"
-    - "Type: Fix"
-    - "Type: Refactoring"
-- name: "type: question"
-  description: Request for information or clarification. Not an issue.
-  color: "c5def5"
-  aliases:
-    - "question"
-- name: "type: security"
-  description: Something is vulnerable or not secure.
-  color: "d73a4a"
-  aliases:
-    - "security"
-- name: "type: testing"
-  description: Related to testing.
-  color: "fbca04"
-  aliases:
-    - "test"
-    - "testing"
-# endregion Type
-
-# region Work
+# ----------------------------------- Work ----------------------------------- #
 - name: "work: chaotic"
   description: The situation is chaotic, novel practices used.
-  color: "fbca04"
+  color: "#fbca04"
   aliases:
     - "chaotic"
 - name: "work: complex"
   description: The situation is complex, emergent practices used.
-  color: "d4c5f9"
+  color: "#d4c5f9"
   aliases:
     - "complex"
 - name: "work: complicated"
   description: The situation is complicated, good practices used.
-  color: "ffb8c6"
+  color: "#ffb8c6"
   aliases:
     - "complicated"
 - name: "work: obvious"
   description: The situation is obvious, best practices used.
-  color: "91ca55"
+  color: "#91ca55"
   aliases:
     - "obvious"
-# endregion Work
 
-# region Semantic Versioning
-- name: "breaking"
-  description: this is a change that we should wait to bundle into the next major version
-  color: "b5e67b"
-  aliases:
-    - "breaking change"
-    - "breaking-change"
-    - "breaking"
-    - "next major: breaking change"
-    - "Type: Breaking Change"
-    - "type: breaking"
-- name: "semver: major"
-  description: Hint for users that this is an API breaking change.
-  color: "FF1053"
-- name: "semver: minor"
-  description: A new feature was added.  No breaking changes.
-  color: "6C6EA0"
-- name: "semver: patch"
-  description: A minor bug fix or small change.
-  color: "66C7F4"
-# endregion Semantic Versioning
+# --------------------------------- Generated -------------------------------- #
+- name: "bot"
+  color: "#ffcc00"
 
-# region Language
-# ref: <https://github.com/googleapis/repo-automation-bots/tree/main/packages/auto-label>
-- name: "lang: nodejs"
-  description: Issues specific to JavaScript or TypeScript.
-  color: "68A063"
-- name: "lang: ruby"
-  description: Issues specific to Ruby.
-  color: "E0115F"
-- name: "lang: elixir"
-  description: Issues specific to Elixir.
-  color: "301934"
-- name: "lang: php"
-  description: Issues specific to PHP.
-  color: "c281f7"
-- name: "lang: python"
-  description: Issues specific to Python.
-  color: "2576a8"
-- name: "lang: java"
-  description: Issues specific to Java.
-  color: "d49713"
-- name: "lang: dotnet"
-  description: Issues specific to .NET.
-  color: "b905fa"
-- name: "lang: cpp"
-  description: Issues specific to C++.
-  color: "002fff"
-- name: "lang: go"
-  description: Issues specific to Go.
-  color: "2fe0da"
-# endregion Language
-
-# region Stale
-# ref: <https://github.com/googleapis/repo-automation-bots/tree/main/packages/auto-label>
-- name: "stale: old"
-  description: Pull request is old and needs attention.
-  color: "ab270b"
-- name: "stale: extraold"
-  description: Pull request is critically old and needs prioritization.
-  color: "801904"
-# endregion Stale
-
-# region Generated
-- name: "autofix"
-  description: Apply linters automatic fixes.
-  color: "00ff00"
-- name: "generated: genai"
-  description: Contains Generative AI based code, requesting an additional reviewer.
-  color: "ffcc00"
-# endregion Generated
-
-# region Release Please
+# ------------------------------ Release Please ------------------------------ #
 # ref: <https://github.com/googleapis/release-please>
 - name: "autorelease: pending"
-  color: "ededed"
+  color: "#ededed"
+  description: is the initial state of the Release PR before it is merged
 - name: "autorelease: tagged"
-  color: "ededed"
+  color: "#ededed"
+  description: means that the Release PR has been merged and the release has been tagged in GitHub
 - name: "autorelease: snapshot"
-  color: "ededed"
+  color: "#ededed"
+  description: is a special state for snapshot version bumps
 - name: "autorelease: published"
-  color: "ededed"
-- name: "release-please:force-run"
-  color: "bdca82"
-# endregion Release Please
+  color: "#ededed"
+  description: means that a GitHub release has been published based on the Release PR
