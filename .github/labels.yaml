@@ -20,7 +20,7 @@
 - name: "duplicate"
   color: "#cfd3d7"
   description: This issue or pull request already exists
-  types:
+  aliases:
     - "state: duplicate"
     - "status: duplicate"
 - name: "enhancement"
