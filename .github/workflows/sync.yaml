@@ -10,10 +10,6 @@ on:
     - cron: "0 0 * * 0" # Runs at 00:00, only on Sunday
   workflow_dispatch:
 
-concurrency:
-  group: ${{ github.workflow }} @ ${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   python:
     name: Python
@@ -21,21 +17,12 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - id: auth
-        name: Authenticate
-        uses: liblaf/actions-ts/authenticate@dist
-        with:
-          app-id: ${{ secrets.GH_APP_ID }}
-          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@v6
-        with:
-          token: ${{ steps.auth.outputs.token }}
       - name: Checkout Copier Template
         uses: actions/checkout@v6
         with:
           repository: ${{ github.repository_owner }}/copier-python
-          token: ${{ steps.auth.outputs.token }}
           path: tmp.3wTvlJYPRu
           sparse-checkout: template/.config/linters
       - name: Sync Linter Rules
@@ -44,9 +31,13 @@ jobs:
           'tmp.3wTvlJYPRu/template/.config/linters/' 'linters/'
       - name: Clean Copier Template
         run: rm --force --recursive -- 'tmp.3wTvlJYPRu'
-      - name: Commit
-        uses: liblaf/actions-ts/commit@dist
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
         with:
-          add-options: --verbose --all
-          message: "chore(linters): sync from gh:${{ github.repository_owner }}/copier-python"
-          token: ${{ steps.auth.outputs.token }}
+          add-paths: linters/
+          commit-message: "chore: update linter rules"
+          branch: bot/sync-linter-rules
+          delete-branch: true
+          sign-commits: true
+          title: "chore: update linter rules"
+          labels: automerge,bot
