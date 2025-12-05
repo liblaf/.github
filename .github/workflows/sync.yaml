@@ -42,3 +42,5 @@ jobs:
           sign-commits: true
           title: "chore: update linter rules"
           labels: automerge,bot
+          assignees: ${{ github.repository_owner }}
+          reviewers: ${{ github.repository_owner }}
