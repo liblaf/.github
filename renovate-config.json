@@ -20,5 +20,12 @@
       "enabled": false,
       "matchUpdateTypes": "pin"
     }
-  ]
+  ],
+  // ref: <https://docs.renovatebot.com/modules/manager/#disabling-managers>
+  "copier": {
+    "enabled": false
+  },
+  "pyenv": {
+    "enabled": false
+  }
 }
