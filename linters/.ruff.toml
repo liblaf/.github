@@ -9,7 +9,6 @@ show-fixes = true
 
 [format]
 docstring-code-format = true
-skip-magic-trailing-comma = true
 
 [lint]
 explicit-preview-rules = true
@@ -68,3 +67,6 @@ allow-star-arg-any = true
 
 [lint.pydocstyle]
 convention = "google"
+
+[lint.pylint]
+max-args = 10
